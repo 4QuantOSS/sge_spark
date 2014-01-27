@@ -31,7 +31,7 @@ if [ -e "$FWDIR/conf/spark-env.sh" ] ; then
 fi
 
 # Build up classpath
-CLASSPATH="$SPARK_CLASSPATH:$FWDIR/conf"
+CLASSPATH="/afs/psi.ch/project/tipl/jar/TIPL.jar:$SPARK_CLASSPATH:$FWDIR/conf"
 
 # First check if we have a dependencies jar. If so, include binary classes with the deps jar
 if [ -f "$FWDIR"/assembly/target/scala-$SCALA_VERSION/spark-assembly*hadoop*-deps.jar ]; then

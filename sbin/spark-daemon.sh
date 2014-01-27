@@ -99,7 +99,7 @@ export SPARK_PRINT_LAUNCH_COMMAND="1"
 
 # get log directory
 if [ "$SPARK_LOG_DIR" = "" ]; then
-  export SPARK_LOG_DIR="$SPARK_HOME/logs"
+  export SPARK_LOG_DIR="/scratch/logs"
 fi
 mkdir -p "$SPARK_LOG_DIR"
 touch $SPARK_LOG_DIR/.spark_test > /dev/null 2>&1
