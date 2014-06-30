@@ -35,7 +35,7 @@ qsub mysparkjob.sge -master=spark://masternode.me:7077
 ```
 for i in {1..100}; 
 do 
-qsub sparkworker.sge spark://masternode.me:7077; 
+qsub jobs/sparkworker.sge spark://masternode.me:7077; 
 done
 ```
 
