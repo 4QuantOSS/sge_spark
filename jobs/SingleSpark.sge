@@ -1,15 +1,13 @@
 #!/bin/bash
-# test experimental 
+# A single core worker
 # 
-# This script uses the tight integration of openmpi-1.4.3-intel-12.1 in SGE
-# using the parallel environment (PE) "orte".  
 # This script must be used only with qsub command - do NOT run it as a stand-alone 
 # shell script because it will start all processes on the local node.   
 # Define your job name, parallel environment with the number of slots, and run time: 
 #$ -cwd
 #$ -j y
 #$ -pe smp 1
-#$ -M kevinmader+merlinsge@gmail.com
+#$ -M your.email@email.com
 #$ -m ae
 #$ -o singlesparkworker.log
 #$ -l mem_free=22G,ram=8G,s_rt=0:59:00,h_rt=1:00:00
