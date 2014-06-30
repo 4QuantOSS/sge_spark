@@ -1,4 +1,4 @@
-# Running Spark in a Sun Grid Engine (or similar)
+# Running Spark in a Sun/Oracle Grid Engine
 
 Ideally Spark is used on a dedicated cluster or using Mesos tools, but many existing clusters are running Sun Grid Engine or similar frameworks and unlikely to change in the near future (legacy codes). Spark can, however, be run very efficiently run inside these environments
 
