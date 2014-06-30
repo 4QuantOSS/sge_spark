@@ -5,7 +5,7 @@ Ideally Spark is used on a dedicated cluster or using Mesos tools, but many exis
 ## Repository Structure
 
 ### jobs
-A folder with the SGE-style job scripts to run for the workers (setup for the Merlin Cluster at Paul Scherrer Institute but easily adaptable to other systems
+A folder with the SGE-style job scripts to run for the workers (setup for the Merlin Cluster at Paul Scherrer Institute but easily adaptable to other systems. The jobs include a consumable resource called "ram" which is not default on most Sun Grid Engine clusters but should be consumed on a per core basis (smp 6 using 6 cores and ram=8G will need a total of 48GB of memory). It avoids many of the issues with JVMs reserving but not allocating all available memory
 
 ### sbin
 A folder for a script to setup the path locally and create a few aliases to make starting easier
